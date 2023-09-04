@@ -172,7 +172,7 @@ app.post(`/`, (req, res) => {
                 })
                 .then((dat) => {
                     finaldata = [slotData, dat];
-                    // console.log(finaldata[1]);
+                    // console.log(finaldata);
                     res.render("data", { finaldata });
                 });
             } else if (req.body.day === "Thursday") {
